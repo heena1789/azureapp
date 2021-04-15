@@ -13,8 +13,8 @@ Body {
 }  
 button {   
        background-color: #4CAF50;   
-       width: 100%;  
-        color: orange;   
+       width: 40%;  
+        color: black;   
         padding: 15px;   
         margin: 10px 0px;   
         border: none;   
@@ -61,9 +61,9 @@ function login()
 		{
         	alert("enter the password");
 		}
-		else if(!filter.test(uname))
+		else if(uname=='testuser' && pwd=='password')
 		{
-			alert("Enter valid email id.");
+			alert("Login done successfully");
 		}
 		else if(pwd.length < 6 || pwd.length > 6)
 		{
@@ -71,9 +71,9 @@ function login()
 		}
 		else
 		{
-	alert('Thank You for Login & You are Redirecting to Campuslife Website');
+	alert('Login failed due to incorrect username and password');
   //Redirecting to other page or webste code or you can set your own html page.
-       window.location = "https://www.campuslife.co.in";
+     //  window.location = "https://www.campuslife.co.in";
 			}
 	}
 </script>
