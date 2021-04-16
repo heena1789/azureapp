@@ -63,10 +63,10 @@ function login()
 		{
         	alert("enter the password");
 		}
-		else if(uname=='testuser' && pwd=='password')
+		/*else if(uname=='testuser' && pwd=='password')
 		{
-			alert("Login done successfully");
-		}
+			//alert("Login done successfully");
+		}*/
 		else
 		{
 		alert('Login failed due to incorrect username and password');
@@ -81,7 +81,7 @@ function login()
             <input type="text" placeholder="Enter Username" name="username" id="username" required> <br> 
             <label>Password : </label>   
             <input type="password" placeholder="Enter Password" name="password" id="password" required> <br> 
-            <button type="submit" onClick="login()">Login</button> <br>  
+            <input type="submit">Login</input> <br>  
             <input type="checkbox" checked="checked"> Keep me signed in   
             <button type="button" class="cancelbtn"> Cancel</button>   
             Forgot <a href="#"> password? </a>   
