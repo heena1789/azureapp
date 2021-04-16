@@ -54,7 +54,7 @@ function login()
 	{
 		var uname = document.getElementById("username").value;
 		var pwd = document.getElementById("password").value;
-		var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		
 		if(uname =='')
 		{
 			alert("please enter user name.");
@@ -67,21 +67,15 @@ function login()
 		{
 			alert("Login done successfully");
 		}
-		else if(pwd.length < 6 || pwd.length > 6)
-		{
-			alert("Password min and max length is 6.");
-		}
 		else
 		{
-	alert('Login failed due to incorrect username and password');
-  //Redirecting to other page or webste code or you can set your own html page.
-     //  window.location = "https://www.campuslife.co.in";
-			}
+		alert('Login failed due to incorrect username and password');
+		}
 	}
 </script>
 <body>    
     <center> <h2> Login Form </h2> </center>   
-    <form>  
+    <form method="post" action="server.html">  
         <div class="container">   
             <label>Username : </label>   
             <input type="text" placeholder="Enter Username" name="username" id="username" required> <br> 
